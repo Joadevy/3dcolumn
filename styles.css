@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-first: hsl(31, 77%, 52%);
+    --color-second: hsl(184, 100%, 22%);
+    --color-third:hsl(179, 100%, 13%);
+    
+    --color-paragraph: hsla(0, 0%, 100%, 0.75);
+    --color-buttons: hsl(0, 0%, 95%); /* background & headings &  buttons */
+}
+
+body {
+    font-size: 15px;
+    background-color: var(--color-buttons);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-cards {
+        width:90%;
+        margin: 5rem auto;
+        border:1px solid transparent;
+        border-radius::10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: left;
+}
+
+.card h2 {
+    font-family: 'Big shoulders display', sans-serif;
+    font-weight: 700;
+    color: var(--color-buttons);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: var(--color-paragraph);
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.card button {
+    width: 50%;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: .5rem;
+}
+
+.button:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-buttons);
+    color: var(--color-buttons);
+    cursor: pointer;
+}
+
+.first{
+    background-color: var(--color-first);
+    border-radius: 10px 0 0 10px;
+}
+
+.first button {
+    color:var(--color-first);
+}
+
+.second  {
+    background-color: var(--color-second);
+}
+
+.second button {
+    color: var(--color-second);
+}
+
+.third {
+    background-color: var(--color-third);
+    border-radius: 0 10px 10px 0;
+}
+
+.third button {
+    color: var(--color-third);
+}
+
+/* Responsive design - Desktop form */
+
+@media screen and (min-width:1024px) {
+
+    .cont-cards {
+        display: flex;
+        flex-direction: row;
+        width:65%;
+        margin: 6rem auto;
+}
+    .card {
+        padding:3rem;
+    }
+    .card h2 {
+        font-size: 2.2rem;
+    }
+
+    .card p{
+        margin-bottom: 4rem;
+        font-size: 0.85rem;
+    }
+
+    .card button{
+        padding: .8rem;
+        width: 65%;
+    }
+}
