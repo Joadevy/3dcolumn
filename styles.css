@@ -123,11 +123,11 @@ body {
     }
     
     .first{
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 0 10px 0;
 }
     
     .third {
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 10px 10px 0;
 }
     
     
