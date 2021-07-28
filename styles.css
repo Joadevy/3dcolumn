@@ -26,10 +26,10 @@ body {
 }
 
 .cont-cards {
-        width:90%;
+        width:85%;
         margin: 5rem auto;
         border:1px solid transparent;
-        border-radius:10px;
+        border-radius::10px;
 }
 
 .card {
@@ -51,19 +51,25 @@ body {
 .card p{
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
+    font-size: 13px;
     color: var(--color-paragraph);
     line-height: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+ 
 }
 
 .card button {
-    width: 50%;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 12px;
+    width: 30%;
     border: 1px solid transparent;
     border-radius: 20px;
-    padding: .5rem;
+    padding: .6rem;
     position: absolute;
     bottom: 0;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
 }
 
 .button:hover {
@@ -107,7 +113,7 @@ body {
         display: flex;
         flex-direction: row;
         width:65%;
-        margin: 6rem auto;
+        margin: 4rem auto;
 }
     .card {
         padding:3rem;
@@ -117,14 +123,14 @@ body {
     }
 
     .card p{
-        margin-bottom: 4rem;
+        margin-bottom: 7rem;
         font-size: 0.85rem;
     }
 
     .card button{
         padding: .8rem;
         width: 50%;
-        
+        margin:2.5rem auto;
     }
 
     .first{
