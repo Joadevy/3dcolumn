@@ -37,6 +37,7 @@ body {
     flex-direction: column;
     padding: 2rem;
     text-align: left;
+    position: relative;
 }
 
 .card h2 {
@@ -60,6 +61,9 @@ body {
     border: 1px solid transparent;
     border-radius: 20px;
     padding: .5rem;
+    position: absolute;
+    bottom: 0;
+    margin: 1rem 0;
 }
 
 .button:hover {
@@ -119,16 +123,16 @@ body {
 
     .card button{
         padding: .8rem;
-        width: 65%;
+        width: 50%;
+        
+    }
+
+    .first{
+        border-radius: 10px 0 0 10px;
     }
     
-    .first{
-    border-radius: 10px 0 0 10px;
-}
-    
+
     .third {
-    border-radius: 0 10px 10px 0;
-}
-    
-    
+        border-radius: 0 10px 10px 0;
+    }
 }
